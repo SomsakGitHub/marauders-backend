@@ -9,6 +9,8 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class UserRegisterDTO {
+    @NotBlank
+    private String username;
 
     @Email
     @NotBlank
